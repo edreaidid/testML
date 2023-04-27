@@ -18,7 +18,7 @@ smoking = st.selectbox("smoking", ("Yes", "No"))
 if st.button("Submit"):
     
     # Unpickle classifier
-    clf = joblib.load("C:\\Users\\raef\\Desktop\\ML python\\simple ML stapp\\hstat.pkl")
+    clf = joblib.load("hstat.pkl")
     
     # Store inputs into dataframe
     X = pd.DataFrame([[sbp, dbp, smoking]], 
